@@ -62,10 +62,10 @@ class ViewController: UIViewController {
         registerButton.setTitleColor(.white, for: .normal)
         registerButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         
-        nameTextField.layer.cornerRadius = 12
-        addressTextField.layer.cornerRadius = 12
-        passwordTextField.layer.cornerRadius = 12
-        confirmPasswordTextField.layer.cornerRadius = 12
+        nameTextField.layer.cornerRadius = 11
+        addressTextField.layer.cornerRadius = 11
+        passwordTextField.layer.cornerRadius = 11
+        confirmPasswordTextField.layer.cornerRadius = 11
         registerButton.layer.cornerRadius = 10
         
         nameTextField.clipsToBounds = true

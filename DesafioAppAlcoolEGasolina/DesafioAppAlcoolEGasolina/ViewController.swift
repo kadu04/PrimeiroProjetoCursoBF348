@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         gasPriceTextField.keyboardType = .decimalPad
         ethanolPriceTextField.keyboardType = .decimalPad
         
+        gasPriceTextField.
+        
         gasPriceTextField.delegate = self
         ethanolPriceTextField.delegate = self
         
@@ -70,12 +72,20 @@ class ViewController: UIViewController {
     
     @IBAction func tappedCalculateButton(_ sender: UIButton) {
         
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
         
+        //Segunda abordagem (que é mais usada)
+        let ethanolPrice: Double = (formatter.number(from: ethanolPriceTextField.text ?? "0.0") as? Double) ?? 0.0
+        
+        let gasPrice: Double = (formatter.number(from: gasPriceTextField.text ?? "0.0") as? Double) ?? 0.0
+        
+        if ethanolPrice / gasPrice > 0.7 {
+            resultLabel.text = "Melhor utilizar gasolina"
+        } else {
+            resultLabel.text = "Melhor urilizar álcool"
+        }
     }
-    
-    
-
-
 }
 
 extension ViewController: UITextFieldDelegate {

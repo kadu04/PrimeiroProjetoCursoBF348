@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configFontsEColors()
-        
     }
     
     func configFontsEColors() {
@@ -49,7 +48,15 @@ class ViewController: UIViewController {
         gasPriceTextField.keyboardType = .decimalPad
         ethanolPriceTextField.keyboardType = .decimalPad
         
-        gasPriceTextField.
+        gasPriceTextField.layer.cornerRadius = 11
+        ethanolPriceTextField.layer.cornerRadius = 11
+        calculateButton.layer.cornerRadius = 10
+        resultLabel.layer.cornerRadius = 10
+        
+        gasPriceTextField.clipsToBounds = true
+        ethanolPriceTextField.clipsToBounds = true
+        calculateButton.clipsToBounds = true
+        resultLabel.clipsToBounds = true
         
         gasPriceTextField.delegate = self
         ethanolPriceTextField.delegate = self
@@ -64,16 +71,18 @@ class ViewController: UIViewController {
         
         calculateButton.isEnabled = false
         calculateButton.setTitleColor(.white.withAlphaComponent(0.4), for: .disabled)
-        }
-    
-    
-    
+        
+    }
     
     
     @IBAction func tappedCalculateButton(_ sender: UIButton) {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
+        
+        //Primeira abordagem
+//        let ethanolPrice: Double = Double((ethanolPriceTextField.text ?? "0.0").replacingOccurrences(of: ",", with: ".")) ?? 0.0
+//        let gasPrice: Double = Double((gasPriceTextField.text ?? "0.0").replacingOccurrences(of: ",", with: ".")) ?? 0.0
         
         //Segunda abordagem (que é mais usada)
         let ethanolPrice: Double = (formatter.number(from: ethanolPriceTextField.text ?? "0.0") as? Double) ?? 0.0
@@ -91,8 +100,8 @@ class ViewController: UIViewController {
 extension ViewController: UITextFieldDelegate {
     
     //removido pq não tem necessidade de usar.
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//    }
+    //    func textFieldDidBeginEditing(_ textField: UITextField) {
+    //    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         

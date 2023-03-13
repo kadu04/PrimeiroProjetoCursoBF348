@@ -43,34 +43,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="TXJ-GA-u6p"/>
-                    <connections>
-                        <segue destination="ODD-At-PeQ" kind="show" identifier="GoScreen02" id="21x-ar-MWC"/>
-                        <segue destination="fJE-Zh-es5" kind="show" identifier="GoScreen03" id="KOX-AT-rp6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1043.0769230769231" y="-28.436018957345969"/>
-        </scene>
-        <!--Tela02VC-->
-        <scene sceneID="rrb-PT-kK3">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Tela02VC" storyboardName="Tela02VC" id="ODD-At-PeQ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="rkX-im-7in"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HGB-ge-utt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1592" y="-186"/>
-        </scene>
-        <!--Tela03VC-->
-        <scene sceneID="eZr-2h-1D2">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Tela03VC" storyboardName="Tela03VC" id="fJE-Zh-es5" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="LjV-aG-5ue"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ve-HJ-yQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1591" y="120"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8py-Zw-ekt">

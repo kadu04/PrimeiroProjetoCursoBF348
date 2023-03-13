@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Tela03: UIViewController {
+class Tela03VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

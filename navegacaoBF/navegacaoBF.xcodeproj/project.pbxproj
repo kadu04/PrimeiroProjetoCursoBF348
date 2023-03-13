@@ -13,6 +13,10 @@
 		5696330F29BF80ED007C145F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5696330D29BF80ED007C145F /* Main.storyboard */; };
 		5696331129BF80ED007C145F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5696331029BF80ED007C145F /* Assets.xcassets */; };
 		5696331429BF80ED007C145F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5696331229BF80ED007C145F /* LaunchScreen.storyboard */; };
+		5696C06429BF959000835EB3 /* Tela02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5696C06329BF959000835EB3 /* Tela02VC.swift */; };
+		5696C06629BF95AE00835EB3 /* Tela02VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5696C06529BF95AE00835EB3 /* Tela02VC.storyboard */; };
+		5696C06929BF95D500835EB3 /* Tela03VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5696C06829BF95D500835EB3 /* Tela03VC.storyboard */; };
+		5696C06B29BF95E700835EB3 /* Tela03VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5696C06A29BF95E700835EB3 /* Tela03VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5696331029BF80ED007C145F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5696331329BF80ED007C145F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5696331529BF80ED007C145F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5696C06329BF959000835EB3 /* Tela02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tela02VC.swift; path = navegacaoBF/Tela02VC.swift; sourceTree = SOURCE_ROOT; };
+		5696C06529BF95AE00835EB3 /* Tela02VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Tela02VC.storyboard; path = navegacaoBF/Tela02VC.storyboard; sourceTree = SOURCE_ROOT; };
+		5696C06829BF95D500835EB3 /* Tela03VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03VC.storyboard; sourceTree = "<group>"; };
+		5696C06A29BF95E700835EB3 /* Tela03VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		5696330629BF80ED007C145F /* navegacaoBF */ = {
 			isa = PBXGroup;
 			children = (
+				5696C06729BF95C500835EB3 /* Tela03 */,
+				5696332329BF94F4007C145F /* Tela02 */,
 				5696330729BF80ED007C145F /* AppDelegate.swift */,
 				5696330929BF80ED007C145F /* SceneDelegate.swift */,
 				5696330B29BF80ED007C145F /* ViewController.swift */,
@@ -65,6 +75,24 @@
 				5696331529BF80ED007C145F /* Info.plist */,
 			);
 			path = navegacaoBF;
+			sourceTree = "<group>";
+		};
+		5696332329BF94F4007C145F /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				5696C06529BF95AE00835EB3 /* Tela02VC.storyboard */,
+				5696C06329BF959000835EB3 /* Tela02VC.swift */,
+			);
+			path = Tela02;
+			sourceTree = "<group>";
+		};
+		5696C06729BF95C500835EB3 /* Tela03 */ = {
+			isa = PBXGroup;
+			children = (
+				5696C06829BF95D500835EB3 /* Tela03VC.storyboard */,
+				5696C06A29BF95E700835EB3 /* Tela03VC.swift */,
+			);
+			path = Tela03;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,8 @@
 				5696331429BF80ED007C145F /* LaunchScreen.storyboard in Resources */,
 				5696331129BF80ED007C145F /* Assets.xcassets in Resources */,
 				5696330F29BF80ED007C145F /* Main.storyboard in Resources */,
+				5696C06929BF95D500835EB3 /* Tela03VC.storyboard in Resources */,
+				5696C06629BF95AE00835EB3 /* Tela02VC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +170,9 @@
 			files = (
 				5696330C29BF80ED007C145F /* ViewController.swift in Sources */,
 				5696330829BF80ED007C145F /* AppDelegate.swift in Sources */,
+				5696C06429BF959000835EB3 /* Tela02VC.swift in Sources */,
 				5696330A29BF80ED007C145F /* SceneDelegate.swift in Sources */,
+				5696C06B29BF95E700835EB3 /* Tela03VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

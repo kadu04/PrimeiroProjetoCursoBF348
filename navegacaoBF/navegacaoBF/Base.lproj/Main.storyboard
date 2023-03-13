@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f0Q-bc-xTi">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tela Root-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="navegacaoBF" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
                                 <connections>
                                     <action selector="tappedGoScreen02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jXD-Wj-5MJ"/>
-                                    <segue destination="wRG-YY-uGa" kind="show" identifier="GoScreen02" id="1m1-RD-mFa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDz-zU-KWJ">
@@ -31,7 +30,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Tela 03"/>
                                 <connections>
                                     <action selector="tappedGoScreen03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6y-d0-kxX"/>
-                                    <segue destination="VFs-7h-pPf" kind="show" identifier="GoScreen03" id="H6K-RV-l3g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,51 +42,56 @@
                             <constraint firstItem="gXs-Y3-ugD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q1q-v9-hzZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Tela Root" id="TXJ-GA-u6p"/>
+                    <connections>
+                        <segue destination="ODD-At-PeQ" kind="show" identifier="GoScreen02" id="21x-ar-MWC"/>
+                        <segue destination="fJE-Zh-es5" kind="show" identifier="GoScreen03" id="KOX-AT-rp6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114" y="-28"/>
+            <point key="canvasLocation" x="1043.0769230769231" y="-28.436018957345969"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="K5F-84-VQp">
+        <!--Tela02VC-->
+        <scene sceneID="rrb-PT-kK3">
             <objects>
-                <viewController id="wRG-YY-uGa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="arc-gT-Y4v">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KjT-ra-6Nw"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ibc-E0-D9V"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="COK-Em-vmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Tela02VC" storyboardName="Tela02VC" id="ODD-At-PeQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rkX-im-7in"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGB-ge-utt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="-28"/>
+            <point key="canvasLocation" x="1592" y="-186"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="l6X-0r-pud">
+        <!--Tela03VC-->
+        <scene sceneID="eZr-2h-1D2">
             <objects>
-                <viewController id="VFs-7h-pPf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6dk-ad-dSp">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="xBg-Ed-XRr"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="dJZ-wx-yqA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8E0-SU-7KK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Tela03VC" storyboardName="Tela03VC" id="fJE-Zh-es5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LjV-aG-5ue"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ve-HJ-yQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="914" y="709"/>
+            <point key="canvasLocation" x="1591" y="120"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8py-Zw-ekt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f0Q-bc-xTi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="51F-86-P7J">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Asm-5k-aAT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVL-BW-XnJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.84615384615384" y="-28.436018957345969"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

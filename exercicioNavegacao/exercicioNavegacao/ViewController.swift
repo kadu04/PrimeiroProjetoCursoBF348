@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     }
 
     
-//    @IBAction func tappedTela02Button(_ sender: UIButton) {
-//        performSegue(withIdentifier: "Tela02VC", sender: nil)
-//
-//        }
+    @IBAction func tappedTela02Button(_ sender: UIButton) {
+        performSegue(withIdentifier: "Tela02VC", sender: nil)
+
+        }
     
     }
     

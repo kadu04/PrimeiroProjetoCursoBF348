@@ -17,11 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYz-zy-IR9">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="155.33333333333334" y="404.66666666666669" width="79.333333333333343" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
                                 <connections>
-                                    <action selector="tappedTela02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89F-Gg-WFf"/>
+                                    <action selector="tappedTela02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Nc-XE-XNd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-oe-abJ">
+                                <rect key="frame" x="155.33333333333334" y="489.66666666666669" width="79.666666666666657" height="35.000000000000057"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 03"/>
+                                <connections>
+                                    <action selector="tappedTela03Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2C-Xh-GKc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -29,27 +37,16 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="hYz-zy-IR9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1eD-1o-fI0"/>
+                            <constraint firstItem="0XS-oe-abJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IcW-WG-BV5"/>
+                            <constraint firstItem="0XS-oe-abJ" firstAttribute="top" secondItem="hYz-zy-IR9" secondAttribute="bottom" constant="50" id="so7-yY-chj"/>
                             <constraint firstItem="hYz-zy-IR9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zpg-Ew-jjv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="jYP-NW-fda"/>
-                    <connections>
-                        <segue destination="JY0-o5-owI" kind="show" identifier="Tela02VC" id="mvn-IV-dFJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1920" y="-68.246445497630333"/>
-        </scene>
-        <!--Tela02VC-->
-        <scene sceneID="Ks7-F9-Use">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Tela02VC" id="JY0-o5-owI" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ixz-fT-9yc"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nf9-wz-sbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2804.6153846153843" y="-227.48815165876775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RuV-c2-aDM">
@@ -62,7 +59,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9ds-jQ-Ova"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LOg-fe-B0x"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyz-4X-PjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -32,17 +32,70 @@
                                     <action selector="tappedTela03Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x2C-Xh-GKc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDn-2q-tmv">
+                                <rect key="frame" x="12" y="111" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksH-kP-aun">
+                                <rect key="frame" x="12" y="148" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe seu sobrenome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1C-KB-diJ">
+                                <rect key="frame" x="12" y="202" width="185" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7UQ-mv-7Lq">
+                                <rect key="frame" x="12" y="239" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Endereço:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdP-PZ-PoM">
+                                <rect key="frame" x="12" y="293" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SgQ-bw-Kst">
+                                <rect key="frame" x="12" y="330" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="hYz-zy-IR9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1eD-1o-fI0"/>
+                            <constraint firstItem="E1C-KB-diJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="4Ny-Ja-n5c"/>
+                            <constraint firstItem="yDn-2q-tmv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="64i-jI-GJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SgQ-bw-Kst" secondAttribute="trailing" constant="12" id="GEX-5b-QzP"/>
                             <constraint firstItem="0XS-oe-abJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IcW-WG-BV5"/>
+                            <constraint firstItem="7UQ-mv-7Lq" firstAttribute="leading" secondItem="E1C-KB-diJ" secondAttribute="leading" id="Jvb-cc-frP"/>
+                            <constraint firstItem="HdP-PZ-PoM" firstAttribute="top" secondItem="7UQ-mv-7Lq" secondAttribute="bottom" constant="20" id="Loo-j3-434"/>
+                            <constraint firstItem="7UQ-mv-7Lq" firstAttribute="top" secondItem="E1C-KB-diJ" secondAttribute="bottom" constant="16" id="OFY-yC-NJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ksH-kP-aun" secondAttribute="trailing" constant="12" id="Xpu-gv-FBe"/>
+                            <constraint firstItem="HdP-PZ-PoM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Y0D-4I-Pnv"/>
+                            <constraint firstItem="ksH-kP-aun" firstAttribute="top" secondItem="yDn-2q-tmv" secondAttribute="bottom" constant="16" id="hOd-L4-KXX"/>
+                            <constraint firstItem="SgQ-bw-Kst" firstAttribute="top" secondItem="HdP-PZ-PoM" secondAttribute="bottom" constant="16" id="kiY-Ba-yRf"/>
+                            <constraint firstItem="yDn-2q-tmv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="lDX-O8-5Vw"/>
+                            <constraint firstItem="SgQ-bw-Kst" firstAttribute="leading" secondItem="HdP-PZ-PoM" secondAttribute="leading" id="lPO-Ar-eOF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7UQ-mv-7Lq" secondAttribute="trailing" constant="12" id="lvi-4c-123"/>
                             <constraint firstItem="0XS-oe-abJ" firstAttribute="top" secondItem="hYz-zy-IR9" secondAttribute="bottom" constant="50" id="so7-yY-chj"/>
+                            <constraint firstItem="E1C-KB-diJ" firstAttribute="top" secondItem="ksH-kP-aun" secondAttribute="bottom" constant="20" id="tjF-xx-GYi"/>
+                            <constraint firstItem="ksH-kP-aun" firstAttribute="leading" secondItem="yDn-2q-tmv" secondAttribute="leading" id="u4a-6d-80E"/>
                             <constraint firstItem="hYz-zy-IR9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zpg-Ew-jjv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tela Root" id="jYP-NW-fda"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="SgQ-bw-Kst" id="k6F-45-VHz"/>
+                        <outlet property="lastNameTextField" destination="7UQ-mv-7Lq" id="xLD-mN-kE0"/>
+                        <outlet property="nameTextField" destination="ksH-kP-aun" id="DCO-7s-Qio"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

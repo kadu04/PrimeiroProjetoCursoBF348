@@ -8,9 +8,17 @@
 import UIKit
 
 class Tela03VC: UIViewController {
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    
+    var address: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(#function)
+        addressLabel.text = address
+        
 
         // Do any additional setup after loading the view.
     }

@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="AXZ-bF-9eE" kind="show" id="O2Y-WC-gR9"/>
+                                    <action selector="tappedTela02Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vgd-5F-HLl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,6 +32,9 @@
                             <constraint firstItem="hYz-zy-IR9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zpg-Ew-jjv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="AXZ-bF-9eE" kind="show" identifier="Tela02VC" id="BFG-Wf-YI4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

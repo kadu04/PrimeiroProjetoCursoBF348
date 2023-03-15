@@ -59,9 +59,4 @@ class ViewController: UIViewController {
     }
 }
 
-struct Pessoa {
-    var nome: String
-    var sobrenome: String
-    var idade: String
-    var profissao: String
-}
+

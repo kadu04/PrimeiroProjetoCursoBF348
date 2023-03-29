@@ -10,11 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="186" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="TableViewCollectionView" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="339" height="186"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="372" id="KGk-i7-Jjw" customClass="CarTableViewCell" customModule="TableViewCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="372"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="339" height="186"/>
+                <rect key="frame" x="0.0" y="0.0" width="345" height="372"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veículos:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWO-a1-6Xb">
@@ -24,10 +24,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0bq-cq-UNo">
-                        <rect key="frame" x="0.0" y="56" width="339" height="130"/>
+                        <rect key="frame" x="0.0" y="72" width="345" height="300"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="130" id="bfR-2v-vEz"/>
+                            <constraint firstAttribute="height" constant="300" id="iSP-Eh-D66"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aWU-to-w8T">
                             <size key="itemSize" width="128" height="128"/>
@@ -38,11 +38,11 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="0bq-cq-UNo" secondAttribute="trailing" id="9aW-MP-fXd"/>
+                    <constraint firstItem="0bq-cq-UNo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Wu-gb-61d"/>
+                    <constraint firstAttribute="trailing" secondItem="0bq-cq-UNo" secondAttribute="trailing" id="8Xk-7P-PSk"/>
                     <constraint firstItem="gWO-a1-6Xb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="HZn-aS-zsg"/>
                     <constraint firstItem="gWO-a1-6Xb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ntg-je-xa2"/>
-                    <constraint firstItem="0bq-cq-UNo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WrU-NV-Nel"/>
-                    <constraint firstAttribute="bottom" secondItem="0bq-cq-UNo" secondAttribute="bottom" id="vZJ-cs-l3W"/>
+                    <constraint firstAttribute="bottom" secondItem="0bq-cq-UNo" secondAttribute="bottom" id="rfT-AB-LS7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -50,7 +50,7 @@
                 <outlet property="collectionView" destination="0bq-cq-UNo" id="I5A-zQ-Jji"/>
                 <outlet property="titleLabel" destination="gWO-a1-6Xb" id="MYV-r3-gg7"/>
             </connections>
-            <point key="canvasLocation" x="5.3846153846153841" y="44.075829383886251"/>
+            <point key="canvasLocation" x="52" y="43"/>
         </tableViewCell>
     </objects>
     <resources>

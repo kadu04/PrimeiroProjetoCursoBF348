@@ -13,6 +13,11 @@
 		5678C64C29D4E4FB00F94B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5678C64A29D4E4FB00F94B26 /* Main.storyboard */; };
 		5678C64E29D4E4FD00F94B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5678C64D29D4E4FD00F94B26 /* Assets.xcassets */; };
 		5678C65129D4E4FD00F94B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5678C64F29D4E4FD00F94B26 /* LaunchScreen.storyboard */; };
+		5678C65B29D4E74700F94B26 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C65929D4E74700F94B26 /* CarTableViewCell.swift */; };
+		5678C65C29D4E74700F94B26 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5678C65A29D4E74700F94B26 /* CarTableViewCell.xib */; };
+		5678C66029D4E77100F94B26 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C65E29D4E77100F94B26 /* CustomCollectionViewCell.swift */; };
+		5678C66129D4E77100F94B26 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5678C65F29D4E77100F94B26 /* CustomCollectionViewCell.xib */; };
+		5678C66429D4E78D00F94B26 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C66329D4E78D00F94B26 /* Vehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		5678C64D29D4E4FD00F94B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5678C65029D4E4FD00F94B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5678C65229D4E4FD00F94B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5678C65929D4E74700F94B26 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		5678C65A29D4E74700F94B26 /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		5678C65E29D4E77100F94B26 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		5678C65F29D4E77100F94B26 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		5678C66329D4E78D00F94B26 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		5678C64329D4E4FB00F94B26 /* TableViewCollectionViewAvancado */ = {
 			isa = PBXGroup;
 			children = (
+				5678C66229D4E77B00F94B26 /* Model */,
+				5678C65D29D4E75800F94B26 /* CollectionViewCell */,
+				5678C65829D4E70500F94B26 /* TableViewCell */,
 				5678C64429D4E4FB00F94B26 /* AppDelegate.swift */,
 				5678C64629D4E4FB00F94B26 /* SceneDelegate.swift */,
 				5678C64829D4E4FB00F94B26 /* ViewController.swift */,
@@ -65,6 +78,32 @@
 				5678C65229D4E4FD00F94B26 /* Info.plist */,
 			);
 			path = TableViewCollectionViewAvancado;
+			sourceTree = "<group>";
+		};
+		5678C65829D4E70500F94B26 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5678C65929D4E74700F94B26 /* CarTableViewCell.swift */,
+				5678C65A29D4E74700F94B26 /* CarTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		5678C65D29D4E75800F94B26 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5678C65E29D4E77100F94B26 /* CustomCollectionViewCell.swift */,
+				5678C65F29D4E77100F94B26 /* CustomCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		5678C66229D4E77B00F94B26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5678C66329D4E78D00F94B26 /* Vehicle.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +166,8 @@
 			files = (
 				5678C65129D4E4FD00F94B26 /* LaunchScreen.storyboard in Resources */,
 				5678C64E29D4E4FD00F94B26 /* Assets.xcassets in Resources */,
+				5678C65C29D4E74700F94B26 /* CarTableViewCell.xib in Resources */,
+				5678C66129D4E77100F94B26 /* CustomCollectionViewCell.xib in Resources */,
 				5678C64C29D4E4FB00F94B26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5678C66429D4E78D00F94B26 /* Vehicle.swift in Sources */,
 				5678C64929D4E4FB00F94B26 /* ViewController.swift in Sources */,
+				5678C66029D4E77100F94B26 /* CustomCollectionViewCell.swift in Sources */,
 				5678C64529D4E4FB00F94B26 /* AppDelegate.swift in Sources */,
+				5678C65B29D4E74700F94B26 /* CarTableViewCell.swift in Sources */,
 				5678C64729D4E4FB00F94B26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

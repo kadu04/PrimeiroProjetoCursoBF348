@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CarTableViewCell.nib(), forCellReuseIdentifier: CarTableViewCell.identifier)
+        tableView.backgroundColor = .lightGray
     }
 }
 
@@ -54,6 +55,7 @@ extension ViewController: UITableViewDataSource {
         
         // Abordagem com opcionalidade
         let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
+        cell?.backgroundColor = .systemBlue
         cell?.setupCell(data: vehicleList[indexPath.row])
         return cell ?? UITableViewCell()
     }

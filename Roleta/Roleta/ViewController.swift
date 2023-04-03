@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         blockedDrawNumberButton()
         configTableView()
         configTextEndColors()
+        alert = AlertController(controller: self)
     }
     
     func configTextEndColors() {

@@ -19,7 +19,6 @@ class HomeVC: UIViewController {
     
     
     var viewModel: HomeViewModel = HomeViewModel()
-    
     var alert: AlertController?
     
 
@@ -75,12 +74,10 @@ extension HomeVC: UITableViewDelegate {
         blockedDrawNumberButton()
         tableView.reloadData()
     }
-    
 }
 
 extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return viewModel.numberOfRowInSection
     }
     

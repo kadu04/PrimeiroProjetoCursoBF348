@@ -56,7 +56,4 @@ class HomeViewModel {
     func appendPerson(name: String) {
         listPerson.append(Person(name: name, image: listImage.randomElement() ?? ""))
     }
-    
-    
-
 }

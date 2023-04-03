@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class Person {
     var name: String
     var image: String

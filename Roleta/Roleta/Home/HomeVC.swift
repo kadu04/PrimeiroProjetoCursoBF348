@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
     
     @IBOutlet weak var logoAppImageView: UIImageView!
     
@@ -17,11 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var listPerson: [Person] = []
     
-    var listImage: [String] = ["Image-1", "Image-2", "Image-3", "Image-4", "Image-5"]
-    
-    var person: Person?
+    var viewModel: HomeViewModel = HomeViewModel()
     
     var alert: AlertController?
     
@@ -49,7 +46,7 @@ class ViewController: UIViewController {
     }
     
     func blockedDrawNumberButton() {
-        if listPerson.isEmpty {
+        if viewModel.isListPersonEmpty {
             drawNumberButton.isEnabled = false
             drawNumberButton.alpha = 0.5
         } else {
@@ -59,22 +56,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tappedDrawNumberButton(_ sender: UIButton) {
-        
-        self.person = listPerson.randomElement()
+        viewModel.drawNumber()
     }
 }
 
 
-extension ViewController: UITableViewDelegate {
+extension HomeVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if self.listPerson[indexPath.row] === self.person {
+        if viewModel.checkPersonPayer(indexPath: indexPath) {
             print("Parabéns você foi sorteado, então pague a conta")
             alert?.showAlert(title: "Muito bom", message: "Agora é sua vez, pague a conta ;)")
-            listPerson.removeAll()
+            viewModel.removeAll()
         } else {
             print("Uffa, voce escapou")
-            listPerson.remove(at: indexPath.row)
+            viewModel.removePerson(indexPath: indexPath)
         }
         blockedDrawNumberButton()
         tableView.reloadData()
@@ -82,45 +78,36 @@ extension ViewController: UITableViewDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if listPerson.count == 0 {
-            return 1
-        } else {
-            return listPerson.count
-        }
-        
+        return viewModel.numberOfRowInSection
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if listPerson.count == 0 {
+        if viewModel.isListPersonEmpty {
             let cell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier, for: indexPath) as? EmptyTableViewCell
             return cell ?? UITableViewCell()
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: PersonTableViewCell.identifier, for: indexPath) as? PersonTableViewCell
-            cell?.setupCell(data: listPerson[indexPath.row])
+            cell?.setupCell(data: viewModel.loadCurrentPerson(indexPath: indexPath))
             return cell ?? UITableViewCell()
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if listPerson.count == 0 {
-            return 248
-        } else {
-            return 92
-        }
+        return viewModel.heightForRowAt
     }
 }
 
 
-extension ViewController: UITextFieldDelegate {
+extension HomeVC: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         if !(textField.text?.isEmpty ?? false) {
-            listPerson.append(Person(name: textField.text ?? "", image: listImage.randomElement() ?? ""))
+            viewModel.appendPerson(name: textField.text ?? "")
             tableView.reloadData()
             blockedDrawNumberButton()
         }

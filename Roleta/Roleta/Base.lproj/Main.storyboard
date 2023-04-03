@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q4d-9O-ci6">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +12,7 @@
             <objects>
                 <viewController id="8Es-ZX-aNj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qOb-J4-a28">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="dvo-uI-tdk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -27,24 +26,24 @@
         <!--Roleta-->
         <scene sceneID="iPh-Mw-T7y">
             <objects>
-                <viewController id="G96-LK-kr9" customClass="ViewController" customModule="Roleta" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G96-LK-kr9" customClass="HomeVC" customModule="Roleta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zVs-38-Xzv">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="Hww-4g-5eB">
-                                <rect key="frame" x="40" y="87" width="310" height="200"/>
+                                <rect key="frame" x="40" y="40" width="520" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="0kh-yu-oV5"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fPr-kP-NTz">
-                                <rect key="frame" x="25" y="317" width="340" height="34"/>
+                                <rect key="frame" x="25" y="270" width="550" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7j-TN-cUz">
-                                <rect key="frame" x="25" y="376" width="340" height="35"/>
+                                <rect key="frame" x="25" y="329" width="550" height="35"/>
                                 <color key="backgroundColor" red="0.12704832020000001" green="0.1538778499" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Lm9-Xd-FR8"/>
@@ -59,7 +58,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="O6I-5s-3Dj">
-                                <rect key="frame" x="0.0" y="421" width="390" height="340"/>
+                                <rect key="frame" x="0.0" y="374" width="600" height="177"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>

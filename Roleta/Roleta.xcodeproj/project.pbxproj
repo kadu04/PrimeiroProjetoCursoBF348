@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5678C73A29DA172300F94B26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C73929DA172300F94B26 /* AppDelegate.swift */; };
 		5678C73C29DA172300F94B26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C73B29DA172300F94B26 /* SceneDelegate.swift */; };
-		5678C73E29DA172300F94B26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C73D29DA172300F94B26 /* ViewController.swift */; };
+		5678C73E29DA172300F94B26 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C73D29DA172300F94B26 /* HomeVC.swift */; };
 		5678C74129DA172300F94B26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5678C73F29DA172300F94B26 /* Main.storyboard */; };
 		5678C74329DA172500F94B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5678C74229DA172500F94B26 /* Assets.xcassets */; };
 		5678C74629DA172500F94B26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5678C74429DA172500F94B26 /* LaunchScreen.storyboard */; };
@@ -19,13 +19,14 @@
 		5678C75829DA1CBE00F94B26 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C75629DA1CBE00F94B26 /* EmptyTableViewCell.swift */; };
 		5678C75929DA1CBE00F94B26 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5678C75729DA1CBE00F94B26 /* EmptyTableViewCell.xib */; };
 		5678C75C29DA1CE100F94B26 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C75B29DA1CE100F94B26 /* AlertController.swift */; };
+		5678C76029DB192D00F94B26 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5678C75F29DB192D00F94B26 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5678C73629DA172300F94B26 /* Roleta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roleta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5678C73929DA172300F94B26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5678C73B29DA172300F94B26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5678C73D29DA172300F94B26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5678C73D29DA172300F94B26 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		5678C74029DA172300F94B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5678C74229DA172500F94B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5678C74529DA172500F94B26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		5678C75629DA1CBE00F94B26 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		5678C75729DA1CBE00F94B26 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		5678C75B29DA1CE100F94B26 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		5678C75F29DB192D00F94B26 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +70,11 @@
 		5678C73829DA172300F94B26 /* Roleta */ = {
 			isa = PBXGroup;
 			children = (
+				5678C75D29DB18A200F94B26 /* Home */,
 				5678C74D29DA1C2D00F94B26 /* Model */,
 				5678C75A29DA1CC200F94B26 /* Alert */,
 				5678C75529DA1C9C00F94B26 /* EmptyCell */,
 				5678C75029DA1C6C00F94B26 /* Person */,
-				5678C73D29DA172300F94B26 /* ViewController.swift */,
 				5678C73F29DA172300F94B26 /* Main.storyboard */,
 				5678C73929DA172300F94B26 /* AppDelegate.swift */,
 				5678C73B29DA172300F94B26 /* SceneDelegate.swift */,
@@ -115,6 +117,23 @@
 				5678C75B29DA1CE100F94B26 /* AlertController.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		5678C75D29DB18A200F94B26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5678C75E29DB18C200F94B26 /* ViewModel */,
+				5678C73D29DA172300F94B26 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5678C75E29DB18C200F94B26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5678C75F29DB192D00F94B26 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5678C73E29DA172300F94B26 /* ViewController.swift in Sources */,
+				5678C73E29DA172300F94B26 /* HomeVC.swift in Sources */,
 				5678C73A29DA172300F94B26 /* AppDelegate.swift in Sources */,
 				5678C74F29DA1C4500F94B26 /* Person.swift in Sources */,
+				5678C76029DB192D00F94B26 /* HomeViewModel.swift in Sources */,
 				5678C75329DA1C9600F94B26 /* PersonTableViewCell.swift in Sources */,
 				5678C75C29DA1CE100F94B26 /* AlertController.swift in Sources */,
 				5678C73C29DA172300F94B26 /* SceneDelegate.swift in Sources */,

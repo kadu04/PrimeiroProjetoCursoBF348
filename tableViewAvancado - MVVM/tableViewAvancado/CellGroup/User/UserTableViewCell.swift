@@ -7,17 +7,18 @@
 
 import UIKit
 
-class NameTableViewCell: UITableViewCell {
+class UserTableViewCell: UITableViewCell {
     //2- Criar a célula e fazer ligação
     @IBOutlet weak var nameLabel: UILabel!
     
-    @IBOutlet weak var faceImageView: UIImageView!
+    @IBOutlet weak var userImageView: UIImageView!
+    
     //3-
-    static let identifier: String = "NameTableViewCell"
+    static let identifier: String = "UserTableViewCell"
         //4-
-        static func nib() -> UINib{
-            return UINib(nibName: identifier, bundle: nil)
-        }
+    static func nib() -> UINib {
+        return UINib(nibName: identifier, bundle: nil)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +29,7 @@ class NameTableViewCell: UITableViewCell {
  
     //6-
     func setupCell(data: User) {
+        userImageView.image = data.image
         nameLabel.text = data.name
-        faceImageView.image = data.image
-        
     }
 }

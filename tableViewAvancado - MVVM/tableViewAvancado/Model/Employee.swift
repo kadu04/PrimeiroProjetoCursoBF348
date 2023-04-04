@@ -14,6 +14,6 @@ struct Employee {
     var age: Int
     var profession: String
     var salary: String
-    var image: UIImage
+    var imageUser: UIImage
     var isEnableHeart: Bool
 }

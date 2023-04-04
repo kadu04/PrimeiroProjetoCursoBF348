@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NameTableViewCell01: UITableViewCell {
+class EmployeeTableViewCell: UITableViewCell {
     //7- Criar célula e fazer ligações
     @IBOutlet weak var userImageView: UIImageView!
     
@@ -23,11 +23,13 @@ class NameTableViewCell01: UITableViewCell {
     
     
     //8-
-    static let identifier: String = "NameTableViewCell01"
+    static let identifier: String = "EmployeeTableViewCell"
         
         static func nib() -> UINib{
             return UINib(nibName: identifier, bundle: nil)
         }
+    
+    var viewModel: EmployeeTableViewCellViewModel = EmployeeTableViewCellViewModel()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,11 +38,13 @@ class NameTableViewCell01: UITableViewCell {
     }
     //9-
     func setupCell(data: Employee) {
-        self.userImageView.image = data.image
-        self.nameLabel.text = "Nome: \(data.name)"
-        self.ageLabel.text = "Idade: \(String(data.age))"
-        self.professionLabel.text = "Profissão: \(data.profession)"
-        self.salaryLabel.text = "Salário: \(data.salary)"
+        
+        viewModel.setEmployee(employee: data)
+        self.userImageView.image = data.imageUser
+        self.nameLabel.text = viewModel.name
+        self.professionLabel.text = viewModel.profession
+        self.salaryLabel.text = viewModel.salary
+        self.ageLabel.text = viewModel.age
         
         if data.isEnableHeart{
             self.tappedHeartButton.tintColor = .red
